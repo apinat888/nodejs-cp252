@@ -1,7 +1,8 @@
 const categories = [];
 
 const getCategories = (req, res) => {
-  res.json({ categories });
+  const result = categories.length > 0 ? categories : ['unknown'];
+  res.json({ categories: result });
 };
 
 // Implement other controllers related to categories
