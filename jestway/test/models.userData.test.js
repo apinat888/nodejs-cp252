@@ -30,16 +30,21 @@ describe('remove user', () => {
     })
 })
 
-describe('remove 2 user', () => {
-    test('Remove two', () => {
-      testUserData = new UserData();
-      testUserData.addUser(user);
-      testUserData.addUser(user)
-      testUserData.addUser(user)
-      const userCountBefore = testUserData.getUserCount();
-      testUserData.removeOneUser();
-      const userCountAfter = testUserData.getUserCount();
-      const difUser = userCountBefore - userCountAfter;
-      expect(difUser).toEqual(1);
-    })
-})
+test('Remove two', () => {
+  testUserData = new UserData();
+
+  const user = { name: 'test' }; // 👈 ต้องมีบรรทัดนี้
+
+  testUserData.addUser(user);
+  testUserData.addUser(user);
+  testUserData.addUser(user);
+
+  const userCountBefore = testUserData.getUserCount();
+
+  testUserData.removeUser();
+  testUserData.removeUser();
+
+  const userCountAfter = testUserData.getUserCount();
+
+  expect(userCountAfter).toBe(userCountBefore - 2);
+});
