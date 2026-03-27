@@ -29,14 +29,11 @@ jobs:
       run: cd jestway
       
     - name: Build
-      run: |
-        cd jestway
-        npm install
+      run: | 
+       cd jestway
+       npm install
 
     - name: Test
       run: |
-       cd jestway 
+       cd jestway
        npm run test
-
-
-        
