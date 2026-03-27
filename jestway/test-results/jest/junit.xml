@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="4" failures="1" errors="0" time="0.591">
-  <testsuite name="Count user" errors="0" failures="1" skipped="0" timestamp="2026-03-17T04:45:25" time="0.514" tests="4">
+<testsuites name="jest tests" tests="5" failures="0" errors="0" time="0.365">
+  <testsuite name="Count user" errors="0" failures="0" skipped="0" timestamp="2026-03-27T04:50:33" time="0.304" tests="5">
     <testcase classname="Count user default user count" name="Count user default user count" time="0.002">
     </testcase>
-    <testcase classname="Count user clear user and Count" name="Count user clear user and Count" time="0.001">
+    <testcase classname="Count user clear user and Count" name="Count user clear user and Count" time="0">
     </testcase>
     <testcase classname="remove user Remove one" name="remove user Remove one" time="0">
     </testcase>
-    <testcase classname="remove 2 user Remove two" name="remove 2 user Remove two" time="0">
-      <failure>ReferenceError: user is not defined
-    at Object.user (C:\cygwin64\home\DELL\cp252-nodejs\jestway\test\models.userData.test.js:36:28)
-    at Promise.then.completed (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\cygwin64\home\DELL\cp252-nodejs\jestway\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="remove user Remove Two" name="remove user Remove Two" time="0.001">
+    </testcase>
+    <testcase classname="remove user Remove from empty users" name="remove user Remove from empty users" time="0">
     </testcase>
   </testsuite>
 </testsuites>

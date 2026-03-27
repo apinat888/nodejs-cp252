@@ -38,7 +38,7 @@ class UserData {
         this.users = [];
     }
     
-    RemoveTwoUser() {
+    removeTwoUser() {
          const first = this.removeOneUser();
         const second = this.removeOneUser();
         return [first, second];
