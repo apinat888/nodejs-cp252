@@ -24,19 +24,16 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        
-    - name: ChangeFolder
+
+    - name: changeFolder
       run: cd jestway
       
     - name: Build
       run: | 
-        cd jestway
-        npm install
+       cd jestway
+       npm install
 
     - name: Test
       run: |
-        cd jestway
-        npm run test
-
-
-        
+       cd jestway
+       npm run test

@@ -21,9 +21,7 @@ class UserData {
     // Method to clear all users
     removeOneUser() {
         if ( this.users.length > 0 ) {
-            const removedUser =this.users.pop();
-            this.n =this.n -1;
-            return removedUser;
+            return this.users.pop();
         }else{
             return null
         }       
@@ -32,27 +30,23 @@ class UserData {
 
     // Method to clear all users
     getUserCount() {
-        return this.n;
+        return this.users.length;
     }
 
     // Method to clear all users
     clearUsers() {
         this.users = [];
-        this.n = 0;
+    }
+    
+    removeTwoUser() {
+         const first = this.removeOneUser();
+        const second = this.removeOneUser();
+        return [first, second];
+        
     }
 
-    removeTwoUser() {
-        const removedUsers = [];
-        if (this.users.length > 0) {
-            removedUsers.push(this.users.pop());
-            this.n--;
-        }
-        if (this.users.length > 0) {
-            removedUsers.push(this.users.pop());
-            this.n--;
-        }
-        return removedUsers.length > 0 ? removedUsers : null;
-    }
+    
+
 }
 
 module.exports = UserData;
